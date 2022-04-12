@@ -11,42 +11,36 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭─────═[ *INFO PENGGUNA* ]═─────⋆
-│╭───────────────···
-┴│▸ *Name:* %name
-⬡│▸ *Premium:* %prems
-⬡│▸ *Age:* %age
-⬡│▸ *Limit:* %limit
-⬡│▸ *Money:* %money
-⬡│▸ *Role:* %role
-⬡│▸ *Level:* %level [%xp4levelup]
-⬡│▸ *Xp:* %exp / %maxexp
-┬│▸ *Total Xp:* %totalexp
-│╰────────────────···
-┠─────═[ *TODAY* ]═─────⋆
-│╭────────────────···
-┴│    *${ucapan()} %name!*
-⬡│▸ *Tanggal:* %week %weton, %date
-⬡│▸ *Tanggal Islam:* %dateIslamic
-┬│▸ *Waktu:* %time
-│╰────────────────···
-┠─────═[ *BOT INFO* ]═─────⋆
-│╭────────────────···
-┴│▸ *Nama Bot:* %me
-⬡│▸ *Mode:* ${global.opts['self'] ? 'Private' : 'Publik'}
-⬡│▸ *Prefix:* [ ! ]
-⬡│▸ *Speed:* ${neww - old} ms
-⬡│▸ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-⬡│▸ *Platform:* Unbuntu linux
-⬡│▸ *Uptime:* %uptime (%muptime)
-┬│▸ *Database:* %rtotalreg dari %totalreg
-│╰────────────────···
-╰──────────═┅═──────────
+───── [*Info Pengguna*] ─────
+*Name:* %name
+*Premium:* %prems
+*Age:* %age
+*Limit:* %limit
+*Money:* %money
+*Role:* %role
+*Level:* %level [%xp4levelup]
+*Xp:* %exp / %maxexp
+*Total Xp:* %totalexp
+
+───────── [*Today*] ─────────
+*${ucapan()} %name!*
+*Tanggal:* %week %weton, %date
+*Tanggal Islam:* %dateIslamic
+*Waktu:* %time
+
+──────── [*Bot Info*] ────────
+*Nama Bot:* %me
+*Mode:* ${global.opts['self'] ? 'Private' : 'Publik'}
+*Prefix:* [ / ]
+*Speed:* ${neww - old} ms
+*Uptime:* %uptime (%muptime)
+*Database:* %rtotalreg dari %totalreg
+──────────────────────────────
 %readmore`.trimStart(),
-  header: '╭═[ *%category* ]═────···\n┴',
-  body: '│◌ ⃝✧⪼ %cmd %islimit %isPremium',
-  footer: '┬\n╰───────────···',
-  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕.
+  header: '────────[*%category*]────────',
+  body: '- %cmd %islimit %isPremium',
+  footer: '────────────────────────',
+  after: `
      %me
 `,
 }
