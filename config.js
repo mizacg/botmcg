@@ -34,9 +34,9 @@ function pickRandom(list) {
 
 
 global.DeveloperMode = 'false' //Buat Mode True False Moderator
-global.linkGC = ['https://chat.whatsapp.com/BYcW7rue6fA8gNdyLPedDe'] // ganti jadi group lu
-global.owner = ['6288229683561', '6287708773367' ,'6285600204672','62831433937630','6285704954639', '62895336282144', '6285712420674'] // Put your number here
-global.mods = ['6288229683561'] // Want some help?
+global.linkGC = ['https://chat.whatsapp.com/L9f5Kf3mITDIS2QFYzDvax'] // ganti jadi group lu
+global.owner = ['6281220533069'] // Put your number here
+global.mods = ['6281284384602'] // Want some help?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -73,19 +73,19 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '🌙 Lord вσт\nwa.me/6287708773367\n\n\n𝙱𝚢 Kurumi あ\n\n\nFollow IG: @lord_ammar_quoteser_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.'
-global.author = '۰ ⸼'
+global.packname = 'Sticker By MCG'
+global.author = 'Bot MCG'
 
 // silakan di ganti klo mau
-global.botwm = `🤖 Lord вσт`//UBAH JADI NAMAMU
-global.wm = `꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Kurumi - sama˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷`
+global.botwm = `*Bot MCG*`//UBAH JADI NAMAMU
+global.wm = `Bot MCG`
 global.botdate = `❏ ${wktu}\n❏ ${week} ${date}`
-global.imagebot = `https://telegra.ph/file/793b6accf3758f092742a.jpg`
+global.imagebot = `https://cdn.discordapp.com/avatars/904177348482568212/492601a94754fee66c10ac371aab9426`
 global.logo = fs.readFileSync('./src/logo3.jpg')
-global.thumb1 = 'https://i.ibb.co/N7rx3zh/20220325-213250.png'
-global.thumb2 = 'https://telegra.ph/file/f87047ec6e5f0d4a9ea91.jpg'
-global.thumb3 = 'https://telegra.ph/file/88edbb01051b397574def.jpg'
-global.thumb4 = 'https://telegra.ph/file/7957630a57078c5ec0400.jpg'
+global.thumb1 = 'https://cdn.discordapp.com/avatars/904177348482568212/492601a94754fee66c10ac371aab9426'
+global.thumb2 = 'https://cdn.discordapp.com/avatars/904177348482568212/492601a94754fee66c10ac371aab9426'
+global.thumb3 = 'https://cdn.discordapp.com/avatars/904177348482568212/492601a94754fee66c10ac371aab9426'
+global.thumb4 = 'https://cdn.discordapp.com/avatars/904177348482568212/492601a94754fee66c10ac371aab9426'
 global.logoowner = fs.readFileSync('./src/owner.jpg')
 global.wait = '```[ ! ] wait...```'
 global.rpg = '[ ! ] Fitur Rpg Dimatikan\nKetik *!enable* *rpg* untuk menggunakan fitur ini!\nKalo Mau main Disini aja\nhttps://chat.whatsapp.com/BYcW7rue6fA8gNdyLPedDe'
